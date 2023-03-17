@@ -33,6 +33,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     color: #262C27;
+    line-height: 21.78px;
 }
 
 .container { 
@@ -49,6 +50,7 @@ body {
     background-position: center;
     min-height: 100vh;
     position: relative;
+    margin-bottom: 80px;
 }
 header::before {
     content: "";
@@ -186,8 +188,114 @@ header::after {
     font-size: 32px;
     line-height: 39px;
     text-align: center;
-    max-width: 359px;
     z-index: 5;
     width: 360px;
     right: 135px;
+}
+
+.information {
+    background-image: url(../img/info-block.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.information::before {
+    content: "";
+    position: absolute;
+    height: 180px;
+    background-color: #262C27;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translateY(-130px);
+    z-index: 1;
+}
+
+.information__top { 
+    display: flex;
+    gap: 82px;   
+    padding-top: 100px;
+    margin-bottom: 65vh;
+}
+
+.information__top-text { 
+    color: white;
+    padding-top: 280px;
+    max-width: 290px;
+    position: relative;
+}
+
+.information__top-text--one {
+    padding-bottom: 125px;
+}
+
+.information__top-text--two {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.play-btn {
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.play-btn span {
+    padding-top: 12px;
+    display: block;
+    color: white;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.information__top-btn { 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.information__top-img { 
+    padding-top: 31px;
+    position: relative;
+    z-index: 6;
+}
+
+.information__bottom { 
+    display: flex;
+    align-items: center;
+    gap: 130px;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.information__bottom-title {
+    text-transform: uppercase;
+    font-family: 'Comfortaa', cursive;
+    font-size: 60px;
+    line-height: 67px;
+    width: 250px;
+}
+
+.information__bottom-list {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 30px 0;
+    width: 643px;
+    font-weight: 700;
+}
+
+.information__bottom-item { 
+    display: flex;
+    margin-bottom: 15px;
+    gap: 25px;
+}
+
+.information__bottom-caption { 
+    width: 178px;
+}
+
+.information__bottom-text {
+
 }
