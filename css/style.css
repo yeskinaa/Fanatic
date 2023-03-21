@@ -43,6 +43,7 @@ body {
     box-sizing: content-box;
 }
 /* -------------HEADER----------------- */
+
 .header { 
     background-image: url(../img/main-block.jpg);
     background-size: cover;
@@ -113,6 +114,7 @@ header::after {
     padding: 12px 74px;
     text-transform: uppercase;
     cursor: pointer;
+    transition: all 0.3s;
 }
 .menu__btn:hover {
     color: #262C27;
@@ -193,6 +195,8 @@ header::after {
     right: 135px;
 }
 
+/* -------------INFORMATION-BLOCK----------------- */
+
 .information {
     background-image: url(../img/info-block.jpg);
     background-size: cover;
@@ -216,7 +220,7 @@ header::after {
     display: flex;
     gap: 82px;   
     padding-top: 100px;
-    margin-bottom: 65vh;
+    margin-bottom: 70vh;
 }
 
 .information__top-text { 
@@ -275,15 +279,15 @@ header::after {
     font-family: 'Comfortaa', cursive;
     font-size: 60px;
     line-height: 67px;
-    width: 250px;
 }
 
 .information__bottom-list {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     padding: 30px 0;
-    width: 643px;
+    width: 565px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .information__bottom-item { 
@@ -296,6 +300,91 @@ header::after {
     width: 178px;
 }
 
-.information__bottom-text {
+/* -------------BUY-BLOCK----------------- */
 
+.buy {
+    padding: 150px 0;
+ }
+
+.buy__inner {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.buy__content {
+    position: relative;
+    width: 502px;
+}
+
+.buy__title {
+    text-transform: uppercase;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 67px;
+    color: #0093A1;
+    margin-bottom: 50px;
+}
+
+.buy__list {
+    margin-bottom: 50px;
+}
+
+.buy__price {
+    position: absolute;
+    width: 201px;
+    height: 199px;
+    right: 0;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 130px;
+    background-image: url(../img/star.svg);
+}
+.buy__price:hover {
+    transform: scale(1.2);
+}
+
+.buy__item { 
+    width: 292px;
+}
+.buy__item:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.buy__item-title { 
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.buy__item-title:hover {
+    color: #0093A1;
+    transition: color 0.3s ease;
+}
+
+.buy__btn { 
+    max-width: 484px;
+    padding: 18px 197px;
+    text-align: center;
+    border: 2px solid #0093A1;
+    color: #0093A1;
+    background-color: transparent;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 45px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.buy__btn:hover {
+    border: none;
+    background-color: #B9C400;
+    border-color: 2px solid #B9C400;
+    color: #262C27;
 }
