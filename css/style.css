@@ -17,13 +17,13 @@ a {
     color: inherit;
 }
 
-ol, ul, li {
-    list-style: none;
-}
-
 img {
     vertical-align: top;
 }
+/* 
+ul, ol, li {
+    list-style: none;
+} */
 
 html,
 body {
@@ -41,6 +41,14 @@ body {
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: content-box;
+}
+
+.title {
+    text-transform: uppercase;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 67px;
 }
 /* -------------HEADER----------------- */
 
@@ -242,6 +250,7 @@ header::after {
     text-align: center;
     cursor: pointer;
     background-color: transparent;
+    position: absolute;
 }
 
 .play-btn span {
@@ -269,16 +278,12 @@ header::after {
 .information__bottom { 
     display: flex;
     align-items: center;
-    gap: 130px;
     color: white;
     padding-bottom: 50px;
 }
 
 .information__bottom-title {
-    text-transform: uppercase;
-    font-family: 'Comfortaa', cursive;
-    font-size: 60px;
-    line-height: 67px;
+    margin-right: 162px;
 }
 
 .information__bottom-list {
@@ -292,8 +297,10 @@ header::after {
 
 .information__bottom-item { 
     display: flex;
-    margin-bottom: 15px;
     gap: 25px;
+}
+.information__bottom-item:not(:last-child) {
+    margin-bottom: 15px;
 }
 
 .information__bottom-caption { 
@@ -318,11 +325,6 @@ header::after {
 }
 
 .buy__title {
-    text-transform: uppercase;
-    font-family: 'Comfortaa', cursive;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 67px;
     color: #0093A1;
     margin-bottom: 50px;
 }
@@ -351,6 +353,7 @@ header::after {
 
 .buy__item { 
     width: 292px;
+    list-style: none;
 }
 .buy__item:not(:last-child) {
     margin-bottom: 25px;
@@ -387,4 +390,52 @@ header::after {
     background-color: #B9C400;
     border-color: 2px solid #B9C400;
     color: #262C27;
+}
+
+/* -------------TECHNOLOGY-BLOCK----------------- */
+.technology { 
+   margin-bottom: 150px;
+}
+
+.technology__top {
+    background-image: url(../img/technology-block.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.technology__top-inner { 
+    position: relative;
+    min-height: 110vh;
+}
+
+.technology__btn { 
+    right: 342px;
+    top: 50vh;
+}
+
+.technology__top-box {
+    position: absolute;
+    left: 0;
+    bottom: 85px;
+}
+
+.technology__title {
+    max-width: 470px;
+    margin-bottom: 62px;
+}
+
+.technology__list {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.technology__list-item { 
+    padding-left: 24px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.technology__list-item:not(:last-child) {
+    margin-bottom: 15px;
 }
